@@ -1,0 +1,9 @@
+Inicio
+  Leer edad
+  Leer tiene_cedula (Sí/No)
+  Si edad >= 18 Y tiene_cedula = "Sí" Entonces
+      Escribir "Puede ingresar a la discoteca"
+  Sino
+      Escribir "No puede ingresar a la discoteca"
+  FinSi
+Fin

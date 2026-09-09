@@ -1,0 +1,11 @@
+Inicio
+  Leer tiene_carnet (Sí/No)
+  Leer esta_estudiando (Sí/No)
+  Leer es_egresado (Sí/No)
+  Leer tiene_ulises (Sí/No)
+  Si (tiene_carnet = "Sí" Y esta_estudiando = "Sí") O es_egresado = "Sí" O tiene_ulises = "Sí" Entonces
+      Escribir "Puede ingresar a la universidad"
+  Sino
+      Escribir "No puede ingresar a la universidad"
+  FinSi
+Fin
