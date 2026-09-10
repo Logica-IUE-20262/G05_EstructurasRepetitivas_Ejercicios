@@ -10,6 +10,7 @@ INICIO
 	Escribir "3. arroz con camarones: 35.750";
 	Escribir "4. sancocho: 30.525";
 	Escribir "5. salir del menú";
+	Escribir "Ingrese su opcion";
 	Leer opciones_menu;
 	cantidad_bandeja =0;
 	cantidad_ajiaco =0;
@@ -35,7 +36,6 @@ INICIO
 				saldo_cuenta =saldo_cuenta+30525;
 				cantidad_sancocho =cantidad_sancocho+1;
 				total_platos=total_platos+1;
-			5: escribir "Haz salido con exito";
 		FinSegun
 		Escribir "¿Desea agregar algo más?";
 		Escribir "1. bandeja paisa : 32.500";
@@ -43,8 +43,10 @@ INICIO
 		Escribir "3. arroz con camarones: 35.750";
 		Escribir "4. sancocho: 30.525";
 		Escribir "5. salir del menú";
+		Escribir "Ingrese su opcion";
 		Leer opciones_menu;
 	FinMientras
+	Escribir "Haz salido con exito";
 	Escribir "La cantidad de platos solicitados es de: ", total_platos;
 	Escribir "De los cuales estan repartidos en: ";
 	Escribir "Bandejas paisa: ", cantidad_bandeja;
@@ -53,3 +55,28 @@ INICIO
 	Escribir "sancocho: ", cantidad_sancocho;
 	Escribir "La cuenta es de: ", saldo_cuenta, " Muchas gracias por visitarnos";
 FIN
+
+
+Identificación de Componentes del Algoritmo
+
+Tipos de Datos:
+
+opciones_menu: Entero (Opción seleccionada por el usuario).
+
+cantidad_bandeja, cantidad_ajiaco, cantidad_camarones, cantidad_sancocho: Enteros (Cantidad de cada plato solicitado).
+
+total_platos: Entero (Suma total de platos pedidos).
+
+saldo_cuenta: Real / Entero (Monto total acumulado a pagar).
+
+Contadores:
+
+cantidad_bandeja, cantidad_ajiaco, cantidad_camarones, cantidad_sancocho: Incrementan de 1 en 1 para registrar las unidades pedidas de cada opción.
+
+total_platos: Incrementa de 1 en 1 cada vez que se agrega un plato cualquiera.
+
+Acumuladores:
+
+saldo_cuenta: Suma valores variables (los precios de los platos seleccionados: $32.500, $27.050, $35.750, $30.525).
+
+Instrucciones clave: Definir, Escribir, Leer, Mientras-Hacer, Segun-Hacer.

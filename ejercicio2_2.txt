@@ -1,0 +1,33 @@
+Realizar un pseudocódigo, diagrama de flujo y código que permita leer un número n y mostrar
+los números pares hasta llegar a n. Identifique las instrucciones, tipos de datos y los contadores
+o acumuladores usados
+
+INICIO
+	Leer numero_dado;
+	acumulador=numero_dado mod 2;
+	si acumulador =0 Entonces
+		Mientras acumulador<= numero_dado Hacer
+			Escribir "Numero: ", acumulador;
+			acumulador=acumulador+2;
+		FinMientras
+	SiNo
+		acumulador=0;
+		Mientras acumulador<numero_dado Hacer
+			Escribir "Numero: ", acumulador;
+			acumulador=acumulador+2;
+		FinMientras
+	FinSi
+FIN
+
+
+Tipos de Datos:
+
+numero_dado: Entero (Límite superior ingresado por el usuario).
+
+acumulador: Entero (Variable usada primero para evaluar la paridad y luego como contador de secuencia).
+
+Contadores: acumulador funciona operativamente como un contador dentro de los ciclos Mientras (acumulador = acumulador + 2), incrementando de 2 en 2.
+
+Acumuladores: A pesar de llamarse acumulador, en la práctica no actúa como acumulador (no realiza sumas acumulativas como suma = suma + valor), sino como variable de control e iteración.
+
+Instrucciones clave: Definir, Escribir, Leer, mod, Si-Entonces-SiNo, Mientras.
