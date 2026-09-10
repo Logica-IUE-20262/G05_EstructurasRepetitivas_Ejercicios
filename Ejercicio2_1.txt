@@ -1,0 +1,55 @@
+Realizar un pseudocódigo, diagrama de flujo y código que permita estar en un menú hasta que el
+usuario decida salir. Identifique las instrucciones, tipos de datos y los contadores o
+acumuladores usados
+
+INICIO
+	Escribir "EL MENU DEL RESTAURANTE INFINITO PARA EL DIA DE HOY ES";
+	Escribir "seleccionar alguna de las opciones para la solicitud de la comida";
+	Escribir "1. bandeja paisa : 32.500";
+	Escribir "2. ajiaco : 27.050";
+	Escribir "3. arroz con camarones: 35.750";
+	Escribir "4. sancocho: 30.525";
+	Escribir "5. salir del menú";
+	Leer opciones_menu;
+	cantidad_bandeja =0;
+	cantidad_ajiaco =0;
+	cantidad_camarones =0;
+	cantidad_sancocho =0;
+	total_platos = 0;
+	saldo_cuenta =0;
+	Mientras opciones_menu <>5 Hacer
+		Segun opciones_menu Hacer
+			1: escribir "Agregada con exito";
+				saldo_cuenta =saldo_cuenta+32500;
+				cantidad_bandeja =cantidad_bandeja+1;
+				total_platos=total_platos+1;
+			2: escribir "Agregada con exito";
+				saldo_cuenta =saldo_cuenta+27050;
+				cantidad_ajiaco =cantidad_ajiaco+1;
+				total_platos=total_platos+1;
+			3: escribir "Agregada con exito";
+				saldo_cuenta =saldo_cuenta+35750;
+				cantidad_camarones =cantidad_camarones+1;
+				total_platos=total_platos+1;
+			4: escribir "Agregada con exito";
+				saldo_cuenta =saldo_cuenta+30525;
+				cantidad_sancocho =cantidad_sancocho+1;
+				total_platos=total_platos+1;
+			5: escribir "Haz salido con exito";
+		FinSegun
+		Escribir "¿Desea agregar algo más?";
+		Escribir "1. bandeja paisa : 32.500";
+		Escribir "2. ajiaco : 27.050";
+		Escribir "3. arroz con camarones: 35.750";
+		Escribir "4. sancocho: 30.525";
+		Escribir "5. salir del menú";
+		Leer opciones_menu;
+	FinMientras
+	Escribir "La cantidad de platos solicitados es de: ", total_platos;
+	Escribir "De los cuales estan repartidos en: ";
+	Escribir "Bandejas paisa: ", cantidad_bandeja;
+	Escribir "ajiacos: ", cantidad_ajiaco;
+	Escribir "arroz con camarones: ", cantidad_camarones;
+	Escribir "sancocho: ", cantidad_sancocho;
+	Escribir "La cuenta es de: ", saldo_cuenta, " Muchas gracias por visitarnos";
+FIN
